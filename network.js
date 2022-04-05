@@ -1,24 +1,24 @@
 export default {
-  id: 'umee-1', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
-  name: 'Umee Network',
+  id: 'cerberus-chain-1', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
+  name: 'Cerberus',
   description:
-    'Umee',
+    'Cerberus',
   logo: `logo.svg`,
-  website: 'https://www.umee.cc',
-  apiURL: 'http://localhost:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://localhost:26657',
-  stakingDenom: 'UMEE',
+  website: 'http://88.99.145.138',
+  apiURL: 'https://api.cerberus.zone:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'https://rpc.cerberus.zone:26657',
+  stakingDenom: 'CRBRUS',
   coinLookup: [
     {
-      viewDenom: 'UMEE',
-      chainDenom: 'uumee',
+      viewDenom: 'CRBRUS',
+      chainDenom: 'ucrbrus',
       chainToViewConversionFactor: 1e-6,
       icon: `currencies/muon.png`,
     },
   ],
-  addressPrefix: 'umee',
-  validatorAddressPrefix: 'umeevaloper',
-  validatorConsensusaddressPrefix: 'umeevalcons', // needed to map validators from staking queries to the validator set
+  addressPrefix: 'cerberus',
+  validatorAddressPrefix: 'cerberusvaloper',
+  validatorConsensusaddressPrefix: 'cerberusvalcons', // needed to map validators from staking queries to the validator set
   HDPath: `m/44'/118'/0'/0/0`,
   lockUpPeriod: `3 days`,
   fees: {
@@ -26,8 +26,8 @@ export default {
       gasEstimate: 350000,
       feeOptions: [
         {
-          denom: 'UMEE',
-          amount: 0.000,
+          denom: 'CRBRUS',
+          amount: 0.001,
         },
       ],
     },
