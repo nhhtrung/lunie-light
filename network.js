@@ -4,7 +4,7 @@ export default {
   description:
     'Cerberus',
   logo: `logo.svg`,
-  website: 'http://88.99.145.138',
+  website: '',
   apiURL: 'https://api.cerberus.zone:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
   rpcURL: 'https://rpc.cerberus.zone:26657',
   stakingDenom: 'CRBRUS',
