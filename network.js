@@ -1,24 +1,24 @@
 export default {
-  id: 'gravity-bridge', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
-  name: 'Gravity Bridge',
+  id: 'umee-1', // DEPRECATE, only used for Lunie extension, NOT CHAIN ID
+  name: 'Umee Network',
   description:
-    'Gravity Bridge',
+    'Umee',
   logo: `logo.svg`,
-  website: 'http://gravitybridge.net/',
-  apiURL: 'https://gravitychain.io:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://gravitychain.io:26657',
-  stakingDenom: 'UGRAVITON',
+  website: 'https://www.umee.cc/',
+  apiURL: 'http://23.88.66.239:41317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'ws://23.88.66.239:46657',
+  stakingDenom: 'UMEE',
   coinLookup: [
     {
-      viewDenom: 'UGRAVITON',
-      chainDenom: 'UGRAVITON',
+      viewDenom: 'UMEE',
+      chainDenom: 'uumee',
       chainToViewConversionFactor: 1e-6,
       icon: `currencies/muon.png`,
     },
   ],
-  addressPrefix: 'gravity',
-  validatorAddressPrefix: 'gravityvaloper',
-  validatorConsensusaddressPrefix: 'gravityvalcons', // needed to map validators from staking queries to the validator set
+  addressPrefix: 'umee',
+  validatorAddressPrefix: 'umeevaloper',
+  validatorConsensusaddressPrefix: 'umeevalcons', // needed to map validators from staking queries to the validator set
   HDPath: `m/44'/118'/0'/0/0`,
   lockUpPeriod: `3 days`,
   fees: {
@@ -26,7 +26,7 @@ export default {
       gasEstimate: 350000,
       feeOptions: [
         {
-          denom: 'UGRAVITON',
+          denom: 'UMEE',
           amount: 0.000,
         },
       ],
