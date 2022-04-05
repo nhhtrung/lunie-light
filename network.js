@@ -4,9 +4,9 @@ export default {
   description:
     'Umee',
   logo: `logo.svg`,
-  website: 'https://www.umee.cc/',
-  apiURL: 'http://23.88.66.239:41317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
-  rpcURL: 'ws://23.88.66.239:46657',
+  website: 'https://www.umee.cc',
+  apiURL: 'http://localhost:1317', // use `npx lcp --proxyUrl http://34.123.30.100:1317`
+  rpcURL: 'ws://localhost:26657',
   stakingDenom: 'UMEE',
   coinLookup: [
     {
